@@ -8,6 +8,7 @@ import ritik from '../assets/ritik gupta jpg.jpg'
 import satyam from '../assets/satyam jpg.jpg'
 
 const Team = () => {
+    
 
     const teamData = [
         {
