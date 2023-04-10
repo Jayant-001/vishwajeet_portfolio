@@ -2,29 +2,37 @@ import React from "react";
 import { Link } from "react-scroll";
 import profileImg from "../assets/profile pic.jpg"
 import Member from "../components/Member";
+import yash from '../assets/yash jpg.jpg'
+import ramu from '../assets/ramu verma jpg.jpg'
+import ritik from '../assets/ritik gupta jpg.jpg'
+import satyam from '../assets/satyam jpg.jpg'
 
 const Team = () => {
 
     const teamData = [
         {
-            img: profileImg,
+            img: ramu,
             name: "Ramu Verma",
-            about: "Promoter at Vishwajeet Banking Point"
+            about: "Promoter at Vishwajeet Banking Point",
+            experience: '5'
         },
         {
-            img: profileImg,
+            img: satyam,
             name: "Satyam Gupta",
-            about: "Bussiness Development Executive at Vishwajeet Banking Point"
+            about: "Bussiness Development Executive at Vishwajeet Banking Point",
+            experience: '2'
         },
         {
-            img: profileImg,
+            img: yash,
             name: "Ramji Gupta",
-            about: "Accountant at Vishwajeet Banking Point"
+            about: "Accountant at Vishwajeet Banking Point",
+            experience: '7'
         },
         {
-            img: profileImg,
+            img: ritik,
             name: "Ritik Kumar Gupta",
-            about: "Assistant Accountant at Vishwajeet Banking Point"
+            about: "Assistant Accountant at Vishwajeet Banking Point",
+            experience: '4'
         },
 
     ]
@@ -54,8 +62,8 @@ const Team = () => {
                     {/* Card */}
 
                     {
-                        teamData.map(data => {
-                            return <Member data={data} />;
+                        teamData.map((data, index) => {
+                            return <Member key={index} data={data} />;
                         })
                     }
 

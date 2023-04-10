@@ -15,7 +15,7 @@ const Member = ({ data }) => {
                 </h1>
             </div>
             <div className="text-gray-700">
-                <p className="dark:text-slate-400">3+ years of experience</p>
+                <p className="dark:text-slate-400"> <span className="font-semibold text-black dark:text-white">{data.experience}+</span> years of experience</p>
                 <p className="dark:text-slate-300">
                     {data.about}
                 </p>

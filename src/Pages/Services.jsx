@@ -14,7 +14,7 @@ const Services = () => {
         {
             title: "Airtel Payments Bank",
             img: airtel,
-            desc: "AEPS, Accounting Opening, Mini Branch, Fast Tag, Insurance, Atal Pension Yojna,... etc.",
+            desc: "AEPS, Account opening, Mini Branch, Fast Tag, Insurance, Atal Pension Yojna,... etc.",
         },
         {
             title: "RapiPay Fintech Pvt. Ltd",
@@ -64,8 +64,8 @@ const Services = () => {
                     {/* change w-4/12 to see number of items in single row */}
                     {/* Card */}
 
-                    {serviceData.map((data) => {
-                        return <Service data={data} />
+                    {serviceData.map((data, index) => {
+                        return <Service key={index} data={data} />
                     })}
 
                     {/* <div className=" my-3 md:my-10 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 ">

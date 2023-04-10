@@ -5,7 +5,7 @@ const Testimonial = ({data}) => {
         <div className=" my-3 md:my-10 w-full md:w-[32%] shadow-xl rounded-lg p-5 flex flex-col gap-3 ">
             <div className="space-y-1">
                 <img
-                    className="w-10 rounded-full"
+                    className="w-10 h-10 object-cover rounded-full"
                     src={data.img}
                     alt=""
                 />

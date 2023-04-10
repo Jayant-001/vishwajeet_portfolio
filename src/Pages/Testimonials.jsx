@@ -1,24 +1,25 @@
 import React from "react";
 import profile from "../assets/profile pic.jpg";
 import Testimonial from "../components/Testimonial";
+import avinash from '../assets/AVINASH JPG.jpg'
 
 const Testimonials = () => {
     const testimonialsData = [
         {
-            img: profile,
-            name: "Jayant Kumar",
+            img: avinash,
+            name: "Avinash Kumar Gupta",
             message:
                 "This company has an awesome team and dedicated staff. I am very impressed by their vision, hard work, outstanding performance, and wonderful teammates. Their reputation is well-earned.",
         },
         {
             img: profile,
-            name: "Jayant Kumar",
+            name: "Arpita Gupta",
             message:
                 "It's a rare thing to discover a bank that genuinely cares about the people. Vishwajeet banking point serves all kinds of banking services. They always showed me kindness, respect and a friendly smile. I can't recommend them enough for all your banking needs. You won't be disappointed.",
         },
         {
             img: profile,
-            name: "Jayant Kumar",
+            name: "Rajat Raj",
             message:
                 "Vishwajeet banking point has a wonderful staff of kind and helpful people. Their locations are very clean, comfortable, friendly and beautiful. This includes them at him branch at (city). If only every other business were to conduct the same level of customer service. The world would be a much friendlier one.",
         },
@@ -40,8 +41,8 @@ const Testimonials = () => {
                 </div>
 
                 <div className="p-5 sm:p-0 flex flex-wrap justify-between">
-                    {testimonialsData.map((data) => {
-                        return <Testimonial data={data} />;
+                    {testimonialsData.map((data, index) => {
+                        return <Testimonial key={index} data={data} />;
                     })}
                 </div>
                 {/* End of card section */}

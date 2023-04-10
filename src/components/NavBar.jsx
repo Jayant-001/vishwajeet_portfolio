@@ -87,7 +87,7 @@ const NavBar = ({ darkMode, setDarkMode }) => {
                             to="contact"
                             spy={true}
                             smooth={true}
-                            offset={-100}
+                            offset={-75}
                             duration={500}
                         >
                             Contact us
@@ -184,7 +184,7 @@ const NavBar = ({ darkMode, setDarkMode }) => {
                                 to="contact"
                                 spy={true}
                                 smooth={true}
-                                offset={-75}
+                                offset={-70}
                                 duration={500}
                                 onClick={menuClick}
                                 className=" font-bold text-md w-fit cursor-pointer hover:text-slate-900 active:text-white"

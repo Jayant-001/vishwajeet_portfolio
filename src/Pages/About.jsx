@@ -3,11 +3,12 @@ import man from "../assets/man.png";
 import dots from "../assets/dots.png";
 import portrait from "../assets/portrait.png";
 import { Link } from "react-scroll";
+import vishwajeet from '../assets/vishwajeet (2).jpg'
 
 const About = () => {
     return (
         <div id="about" className="px-10 dark:bg-slate-900">
-            <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center py-40 gap-20">
+            <div className="container mx-auto flex flex-col lg:flex-row items-center py-40 gap-20">
                 {/* Left picture */}
                 <div className="relative">
                     <img
@@ -16,7 +17,7 @@ const About = () => {
                         alt=""
                     />
                     <div className="h-full rounded-full overflow-hidden">
-                        <img src={portrait} alt="" />
+                        <img src={vishwajeet} alt="" />
                     </div>
                 </div>
                 {/* Right text */}
