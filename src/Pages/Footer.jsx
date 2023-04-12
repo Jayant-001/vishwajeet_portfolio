@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../assets/logo-nav.png";
-import moon from "../assets/moon.png";
 import { Link } from "react-scroll";
 
 const Footer = () => {

@@ -1,7 +1,8 @@
 import React from "react";
 import profile from "../assets/profile pic.jpg";
 import Testimonial from "../components/Testimonial";
-import avinash from '../assets/AVINASH JPG.jpg'
+import avinash from '../assets/avi.jpg'
+import sushil from '../assets/susil dr.jpg'
 
 const Testimonials = () => {
     const testimonialsData = [
@@ -18,8 +19,8 @@ const Testimonials = () => {
                 "It's a rare thing to discover a bank that genuinely cares about the people. Vishwajeet banking point serves all kinds of banking services. They always showed me kindness, respect and a friendly smile. I can't recommend them enough for all your banking needs. You won't be disappointed.",
         },
         {
-            img: profile,
-            name: "Rajat Raj",
+            img: sushil,
+            name: "Dr. Shushil",
             message:
                 "Vishwajeet banking point has a wonderful staff of kind and helpful people. Their locations are very clean, comfortable, friendly and beautiful. This includes them at him branch at (city). If only every other business were to conduct the same level of customer service. The world would be a much friendlier one.",
         },

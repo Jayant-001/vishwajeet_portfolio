@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-scroll";
-import profileImg from "../assets/profile pic.jpg"
 import Member from "../components/Member";
 import yash from '../assets/yash jpg.jpg'
 import ramu from '../assets/ramu verma jpg.jpg'
 import ritik from '../assets/ritik gupta jpg.jpg'
 import satyam from '../assets/satyam jpg.jpg'
+import rajat from '../assets/kundan.jpg'
+import rohit from '../assets/rohit.jpg'
 
 const Team = () => {
 
@@ -34,7 +34,18 @@ const Team = () => {
             about: "Assistant Accountant at Vishwajeet Banking Point",
             experience: '4'
         },
-
+        {
+            img: rajat,
+            name: "Rajat Raj",
+            about: "Digital Marketing",
+            experience: '5'
+        },
+        {
+            img: rohit,
+            name: "Rohit",
+            about: "BDE",
+            experience: '2'
+        }
     ]
 
     return (

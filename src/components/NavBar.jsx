@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/logo-nav.png";
+import logo from "../assets/VR N LOGO.png";
 import moon from "../assets/moon.png";
 import { Link } from "react-scroll";
 
@@ -19,7 +19,7 @@ const NavBar = ({ darkMode, setDarkMode }) => {
             <div className="container px-2 mx-auto py-4 flex items-center justify-between">
                 {/* nav logo */}
                 <div className="flex items-center gap-2 cursor-pointer">
-                    <img className="h-5" src={logo} alt="" />
+                    <img className="w-10" src={logo} alt="" />
                     <span className="text-2xl font-bold text-indigo-900 dark:text-indigo-100 ">
                         Vishwajeet Raj
                     </span>

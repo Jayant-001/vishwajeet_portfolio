@@ -1,7 +1,5 @@
 import React from "react";
-import man from "../assets/man.png";
 import dots from "../assets/dots.png";
-import portrait from "../assets/portrait.png";
 import { Link } from "react-scroll";
 import vishwajeet from '../assets/vishwajeet (2).jpg'
 

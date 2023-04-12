@@ -1,6 +1,4 @@
 import React from "react";
-import icon from "../assets/icon.png";
-import { Link } from "react-scroll";
 import Service from "../components/Service";
 import airtel from "../assets/airtel.jpg";
 import rapiPay from "../assets/rapiPay.jpg";
