@@ -13,7 +13,7 @@ function App() {
   const [darkMode, setDarkMode] = useState(false)  
 
   return (
-    <div className={`font-nunito ${darkMode ? "dark" : ""}`}>
+    <div className={`font-nunito ${darkMode ? "dark" : ""} text-[120%] md:text-[100%]`}>
       
        <Home darkMode={darkMode} setDarkMode={setDarkMode} />
        <About />

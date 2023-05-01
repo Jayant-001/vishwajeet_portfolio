@@ -95,22 +95,26 @@ const NavBar = ({ darkMode, setDarkMode }) => {
                     </li>
                 </ul>
 
+                <div className=" flex space-x-2 items-center">
+
+
                 {/* menu */}
                 <img
                     src={moon}
                     onClick={darkModeClick}
-                    className="h-5 hidden md:block cursor-pointer"
+                    className="h-5 md:block cursor-pointer "
                     alt=""
-                />
+                    />
 
                 <div
                     onClick={menuClick}
                     className="flex z-10 md:hidden flex-col gap-[2px] cursor-pointer hover:bg-blue-100 px-1 py-1 rounded-lg"
-                >
+                    >
                     <div className="w-6 h-1 bg-black"></div>
                     <div className="w-6 h-1 bg-black"></div>
                     <div className="w-6 h-1 bg-black"></div>
                 </div>
+                    </div>
 
                 {showMenu && (
                     <ul className=" md:hidden absolute top-0 left-0 w-full bg-slate-600 p-10 space-y-5 text-center text-white rounded-b-2xl ">

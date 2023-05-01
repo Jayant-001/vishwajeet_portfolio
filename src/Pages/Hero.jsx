@@ -1,6 +1,7 @@
 import React from "react";
 import man from "../assets/man.png";
 import { Link } from "react-scroll";
+import hero_bg from '../assets/hero_bg.jpg'
 
 const Hero = () => {
     return (

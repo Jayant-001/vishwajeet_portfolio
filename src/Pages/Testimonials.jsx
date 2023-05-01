@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../assets/profile pic.jpg";
+import arpita from '../assets/arpita.jpg'
 import Testimonial from "../components/Testimonial";
 import avinash from '../assets/avi.jpg'
 import sushil from '../assets/susil dr.jpg'
@@ -13,7 +13,7 @@ const Testimonials = () => {
                 "This company has an awesome team and dedicated staff. I am very impressed by their vision, hard work, outstanding performance, and wonderful teammates. Their reputation is well-earned.",
         },
         {
-            img: profile,
+            img: arpita,
             name: "Arpita Gupta",
             message:
                 "It's a rare thing to discover a bank that genuinely cares about the people. Vishwajeet banking point serves all kinds of banking services. They always showed me kindness, respect and a friendly smile. I can't recommend them enough for all your banking needs. You won't be disappointed.",

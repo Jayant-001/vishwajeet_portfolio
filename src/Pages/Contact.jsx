@@ -50,7 +50,7 @@ const Contact = () => {
     };
 
     const handleChange = (e) => {
-        setData({ ...data, [e.target.name]: e.target.value.trim()});
+        setData({ ...data, [e.target.name]: e.target.value});
     };
 
     return (
@@ -93,6 +93,7 @@ const Contact = () => {
                         name="user_name"
                         required
                         onChange={handleChange}
+                        value={data.user_name}
                     />
                     <input
                         className="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-md outline-indigo-500 dark:bg-slate-800 dark:ring-0 dark:text-white"
@@ -100,6 +101,7 @@ const Contact = () => {
                         placeholder="Email (optional)"
                         name="user_email"
                         onChange={handleChange}
+                        value={data.user_email}
                     />
                     <input
                         className="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-md outline-indigo-500 dark:bg-slate-800 dark:ring-0 dark:text-white"
@@ -107,6 +109,7 @@ const Contact = () => {
                         placeholder="Contact number"
                         name="user_number"
                         onChange={handleChange}
+                        value={data.user_number}
                     />
 
                     <textarea
@@ -117,6 +120,7 @@ const Contact = () => {
                         name="user_message"
                         required
                         onChange={handleChange}
+                        value={data.user_message}
                     ></textarea>
                     <input type="submit" value="Send" className="w-1/2 bg-indigo-600 text-white cursor-pointer px-3 py-2 rounded-md font-semibold" />
                         {/* Send

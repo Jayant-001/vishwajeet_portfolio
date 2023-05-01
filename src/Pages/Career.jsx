@@ -60,7 +60,7 @@ const Career = () => {
     };
 
     const handleChange = (e) => {
-        setData({ ...data, [e.target.name]: e.target.value.trim() });
+        setData({ ...data, [e.target.name]: e.target.value });
     };
 
     return (
@@ -93,6 +93,7 @@ const Career = () => {
                         name="user_name"
                         onChange={handleChange}
                         required
+                        value={data.user_name}
                     />
                     <input
                         className="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-md outline-indigo-500 dark:bg-slate-800 dark:ring-0 dark:text-white"
@@ -101,6 +102,7 @@ const Career = () => {
                         name="user_email"
                         onChange={handleChange}
                         required
+                        value={data.user_email}
                     />
                     <input
                         className="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-md outline-indigo-500 dark:bg-slate-800 dark:ring-0 dark:text-white"
@@ -109,6 +111,7 @@ const Career = () => {
                         name="user_number"
                         onChange={handleChange}
                         required
+                        value={data.user_number}
                     />
                     <input
                         className="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-md outline-indigo-500 dark:bg-slate-800 dark:ring-0 dark:text-white"
@@ -117,6 +120,7 @@ const Career = () => {
                         name="user_address"
                         onChange={handleChange}
                         required
+                        value={data.user_address}
                     />
                     <input
                         className="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-md outline-indigo-500 dark:bg-slate-800 dark:ring-0 dark:text-white"
@@ -125,6 +129,7 @@ const Career = () => {
                         name="user_pincode"
                         onChange={handleChange}
                         required
+                        value={data.user_pincode}
                     />
                     <textarea
                         className="p-2 w-full min-h-[80px] md:w-1/2 ring-1 ring-indigo-300 rounded-md outline-indigo-500 dark:bg-slate-800 dark:ring-0 dark:text-white"
@@ -134,6 +139,7 @@ const Career = () => {
                         name="user_message"
                         onChange={handleChange}
                         required
+                        value={data.user_message}
                     ></textarea>
                     <button className="w-1/2 bg-indigo-600 text-white cursor-pointer px-3 py-2 rounded-md font-semibold">
                         Apply

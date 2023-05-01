@@ -42,8 +42,8 @@ const Team = () => {
         },
         {
             img: rohit,
-            name: "Rohit",
-            about: "BDE",
+            name: "Rohit Gupta",
+            about: "Bussiness Development Executive at Vishwajeet Banking Point",
             experience: '2'
         }
     ]
@@ -56,7 +56,7 @@ const Team = () => {
                     <h1 className="text-indigo-600 font-bold">Our Team</h1>
                     <h1 className="text-3xl  dark:text-white">
                         A family of{" "}
-                        <span className="text-bold text-red-500">4+</span>{" "}
+                        <span className="text-bold text-red-500">6+</span>{" "}
                         members
                     </h1>
                     {/* <p className="w-2/3 text-center text-gray-400">
