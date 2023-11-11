@@ -1,9 +1,11 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const Career = () => {
     const form = useRef();
 
+    const [loading, setLoading] = useState(false);
     const [data, setData] = useState({
         user_name: "",
         user_email: "",
@@ -33,6 +35,8 @@ const Career = () => {
             return;
         }
 
+        setLoading(true);
+
         emailjs
             .sendForm(
                 "service_cclqw7j",
@@ -42,8 +46,9 @@ const Career = () => {
             )
             .then(
                 (result) => {
-                    console.log(result.text);
-                    alert("Thank You for apply, We will reach you soon.");
+                    setLoading(false);
+                    // console.log(result.text);
+                    toast.success("Thank You for apply, We will reach you soon.");
                     setData({
                         user_name: "",
                         user_email: "",
@@ -51,10 +56,11 @@ const Career = () => {
                         user_address: "",
                         user_pincode: "",
                         user_message: "",
-                    })
+                    });
                 },
                 (error) => {
-                    alert("Something went wrong, please try again later");
+                    setLoading(false);
+                    toast.error("Something went wrong, please try again later");
                 }
             );
     };
@@ -141,8 +147,11 @@ const Career = () => {
                         required
                         value={data.user_message}
                     ></textarea>
-                    <button className="w-1/2 bg-indigo-600 text-white cursor-pointer px-3 py-2 rounded-md font-semibold">
-                        Apply
+                    <button
+                        disabled={loading}
+                        className="w-1/2 bg-indigo-600 text-white cursor-pointer px-3 py-2 rounded-md font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        {`${loading ? "Sending..." : "Apply"}`}
                     </button>
                 </form>
             </div>

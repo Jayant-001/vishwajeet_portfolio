@@ -1,29 +1,32 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const Contact = () => {
-    
     const form = useRef();
 
+    const [loading, setLoading] = useState(false);
     const [data, setData] = useState({
-        user_name: '',
-        user_email: '',
-        user_number: 'Null',
-        user_message: ''
-    })
+        user_name: "",
+        user_email: "",
+        user_number: "Null",
+        user_message: "",
+    });
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        const number = data.user_number.toString()
-        if(number.length > 0 && number.length !== 10) {
-            alert("Please enter a valid mobile number.")
+        const number = data.user_number.toString();
+        if (number.length > 0 && number.length !== 10) {
+            alert("Please enter a valid mobile number.");
             return;
         }
-        if(data.user_message.split(' ').length < 10) {
+        if (data.user_message.split(" ").length < 10) {
             alert("Message must be at least 10 words");
             return;
         }
+
+        setLoading(true);
 
         emailjs
             .sendForm(
@@ -34,23 +37,25 @@ const Contact = () => {
             )
             .then(
                 (result) => {
-                    console.log(result.text);
-                    alert("Thank You, We will reach you soon.");
+                    setLoading(false);
+                    // console.log(result.text);
+                    toast.success("Thank You, We will reach you soon.");
                     setData({
-                        user_name: '',
-                        user_email: '',
-                        user_number: 'Null',
-                        user_message: ''
-                    })
+                        user_name: "",
+                        user_email: "",
+                        user_number: "Null",
+                        user_message: "",
+                    });
                 },
                 (error) => {
-                    alert("Something went wrong, please try again later");
+                    setLoading(false);
+                    toast.error("Something went wrong, please try again later");
                 }
             );
     };
 
     const handleChange = (e) => {
-        setData({ ...data, [e.target.name]: e.target.value});
+        setData({ ...data, [e.target.name]: e.target.value });
     };
 
     return (
@@ -81,7 +86,7 @@ const Contact = () => {
 
                 {/* Apply Form */}
                 <form
-                method="POST"
+                    method="POST"
                     ref={form}
                     onSubmit={sendEmail}
                     className="mt-0 p-8 flex flex-col gap-5 items-center"
@@ -122,8 +127,13 @@ const Contact = () => {
                         onChange={handleChange}
                         value={data.user_message}
                     ></textarea>
-                    <input type="submit" value="Send" className="w-1/2 bg-indigo-600 text-white cursor-pointer px-3 py-2 rounded-md font-semibold" />
-                        {/* Send
+                    <input
+                        disabled={loading}
+                        type="submit"
+                        value={`${loading ? "Sending..." : "Send"}`}
+                        className="w-1/2 bg-indigo-600 text-white cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed px-3 py-2 rounded-md font-semibold"
+                    />
+                    {/* Send
                     /> */}
                 </form>
             </div>
