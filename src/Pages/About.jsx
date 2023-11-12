@@ -35,9 +35,9 @@ const About = () => {
                         </p>
                         <p className="text-xl font-medium dark:text-slate-300">
                             Email:{" "}
-                            <p className="dark:text-white tracking-widest">
+                            <span className="dark:text-white">
                                 vishwajeetbankingpoint@gmail.com
-                            </p>
+                            </span>
                         </p>
                     </div>
 
