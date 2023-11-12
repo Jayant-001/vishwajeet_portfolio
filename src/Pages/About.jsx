@@ -1,25 +1,25 @@
 import React from "react";
 import dots from "../assets/dots.png";
 import { Link } from "react-scroll";
-import vishwajeet from '../assets/vishwajeet (2).jpg'
+import vishwajeet from "../assets/vishwajeet (2).jpg";
 
 const About = () => {
     return (
-        <div id="about" className="px-0 dark:bg-slate-900 ">
-            <div className="container mx-5 md:mx-auto flex flex-col lg:flex-row items-center justify-center w-screen py-40 gap-20">
+        <div id="about" className=" dark:bg-slate-900">
+            <div className="px-5  md:mx-auto flex flex-col lg:flex-row items-center justify-center  py-40 gap-20 ">
                 {/* Left picture */}
-                <div className="relative">
+                <div className="relative flex items-center justify-center">
                     <img
                         src={dots}
                         className="h-1/4 absolute top-0 left-0 -z-10"
                         alt=""
                     />
-                    <div className="h-full rounded-full overflow-hidden">
+                    <div className="h-full rounded-full overflow-hidden max-w-[400px] ">
                         <img src={vishwajeet} alt="" />
                     </div>
                 </div>
                 {/* Right text */}
-                <div className="my-auto flex flex-col gap-3">
+                <div className="my-auto flex flex-col gap-3 ">
                     <h1 className="font-bold text-indigo-600">ABOUT ME</h1>
 
                     {/* About Title */}
@@ -35,7 +35,7 @@ const About = () => {
                         </p>
                         <p className="text-xl font-medium dark:text-slate-300">
                             Email:{" "}
-                            <span className="dark:text-white">
+                            <span className="dark:text-white text-lg sm:text-xl">
                                 vishwajeetbankingpoint@gmail.com
                             </span>
                         </p>

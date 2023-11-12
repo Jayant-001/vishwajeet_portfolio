@@ -78,7 +78,7 @@ const Contact = () => {
                     </p>
                     <p className="text-gray-400 tracking-wider">
                         Email:{" "}
-                        <span className="text-center text-black dark:text-white font-semibold">
+                        <span className="text-center text-sm sm:text-base text-black dark:text-white font-semibold">
                             vishwajeetbankingpoint@gmail.com
                         </span>
                     </p>

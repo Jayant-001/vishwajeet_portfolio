@@ -20,7 +20,7 @@ const NavBar = ({ darkMode, setDarkMode }) => {
                 {/* nav logo */}
                 <div className="flex items-center gap-2 cursor-pointer">
                     <img className="w-10" src={logo} alt="" />
-                    <span className="text-2xl font-bold text-indigo-900 dark:text-indigo-100 ">
+                    <span className="text-2xl font-bold text-indigo-900 dark:text-indigo-100 hidden sm:block">
                         Vishwajeet Raj
                     </span>
                 </div>

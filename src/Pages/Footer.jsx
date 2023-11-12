@@ -32,6 +32,7 @@ const Footer = () => {
                 <div className="font-medium text-center text-gray-200">
                     Designed and Developed by{" "}
                     <a
+                        rel="noreferrer"
                         className="text-red-400 underline font-bold tracking-wider hover:text-red-300 active:text-red-500"
                         href="https://jayant-gupta.vercel.app/"
                         target="_blank"
