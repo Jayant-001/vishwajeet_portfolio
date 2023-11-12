@@ -33,7 +33,7 @@ const Footer = () => {
                     Designed and Developed by{" "}
                     <a
                         className="text-red-400 underline font-bold tracking-wider hover:text-red-300 active:text-red-500"
-                        href="https://www.linkedin.com/in/jayant-cse/"
+                        href="https://jayant-gupta.vercel.app/"
                         target="_blank"
                     >
                         Jayant
