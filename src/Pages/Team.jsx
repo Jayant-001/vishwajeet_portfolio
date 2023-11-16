@@ -1,52 +1,51 @@
 import React from "react";
 import Member from "../components/Member";
-import yash from '../assets/yash jpg.jpg'
-import ramu from '../assets/ramu verma jpg.jpg'
-import ritik from '../assets/ritik gupta jpg.jpg'
-import satyam from '../assets/satyam jpg.jpg'
-import rajat from '../assets/kundan.jpg'
-import rohit from '../assets/rohit.jpg'
+import yash from "../assets/yash jpg.jpg";
+import ramu from "../assets/ramu verma jpg.jpg";
+import ritik from "../assets/ritik gupta jpg.jpg";
+import satyam from "../assets/satyam jpg.jpg";
+import rajat from "../assets/kundan.jpg";
+import rohit from "../assets/rohit.jpg";
 
 const Team = () => {
-
     const teamData = [
         {
             img: ramu,
             name: "Ramu Verma",
             about: "Promoter at Vishwajeet Banking Point",
-            experience: '5'
+            experience: "5",
         },
         {
             img: satyam,
             name: "Satyam Gupta",
             about: "Bussiness Development Executive at Vishwajeet Banking Point",
-            experience: '2'
+            experience: "2",
         },
         {
             img: yash,
             name: "Ramji Gupta",
             about: "Accountant at Vishwajeet Banking Point",
-            experience: '7'
+            experience: "7",
         },
         {
             img: ritik,
             name: "Ritik Kumar Gupta",
             about: "Assistant Accountant at Vishwajeet Banking Point",
-            experience: '4'
+            experience: "4",
         },
         {
             img: rajat,
             name: "Rajat Raj",
             about: "Digital Marketing",
-            experience: '5'
+            experience: "5",
         },
         {
             img: rohit,
             name: "Rohit Gupta",
             about: "Bussiness Development Executive at Vishwajeet Banking Point",
-            experience: '2'
-        }
-    ]
+            experience: "2",
+        },
+    ];
 
     return (
         <div id="team" className="pt-3 dark:bg-slate-900">
@@ -72,154 +71,9 @@ const Team = () => {
                     {/* change w-4/12 to see number of items in single row */}
                     {/* Card */}
 
-                    {
-                        teamData.map((data, index) => {
-                            return <Member key={index} data={data} />;
-                        })
-                    }
-
-                    {/* <div className=" my-3 md:my-2 w-full md:w-1/2 shadow-xl rounded-lg p-5 flex flex-col gap-3 ">
-                        <div className="flex flex-col items-center gap-1">
-                            <img
-                                className="w-20 lg:w-24 object-cover rounded-full"
-                                src="https://randomuser.me/api/portraits/men/47.jpg"
-                                alt=""
-                            />
-                            <h1 className="font-bold text-md md:text-lg tracking-widest  dark:text-white">
-                                Ramu Verma
-                            </h1>
-                        </div>
-                        <div className="text-gray-600">
-                            <p className=" dark:text-white">
-                                3+ years of experience
-                            </p>
-                            <p>
-                                {" "}
-                                <span className="font-semibold">
-                                    Promoter
-                                </span>{" "}
-                                at Vishwajeet Banking Point
-                            </p>
-                        </div>
-                        <Link
-                            to="contact"
-                            spy={true}
-                            smooth={true}
-                            offset={-75}
-                            duration={500}
-                            className="text-indigo-600 font-semibold text-sm w-fit"
-                        >
-                            Know more
-                        </Link>
-                    </div> */}
-
-                    {/* Card */}
-                    {/* <div className=" my-3 md:my-2 w-full md:w-1/2 shadow-xl rounded-lg p-5 flex flex-col gap-3 ">
-                        <div className="flex flex-col items-center gap-1">
-                            <img
-                                className="w-20 lg:w-24 object-cover rounded-full"
-                                src="https://randomuser.me/api/portraits/men/47.jpg"
-                                alt=""
-                            />
-                            <h1 className="font-bold text-md md:text-lg tracking-widest  dark:text-white">
-                                Satyam Gupta
-                            </h1>
-                        </div>
-                        <div className="text-gray-600">
-                            <p className=" dark:text-white">
-                                3+ years of experience
-                            </p>
-                            <p>
-                                {" "}
-                                <span className="font-semibold">
-                                    Bussiness Development Executive
-                                </span>{" "}
-                                at Vishwajeet Banking Point
-                            </p>
-                        </div>
-                        <Link
-                            to="contact"
-                            spy={true}
-                            smooth={true}
-                            offset={-75}
-                            duration={500}
-                            className="text-indigo-600 font-semibold text-sm w-fit"
-                        >
-                            Know more
-                        </Link>
-                    </div> */}
-
-                    {/* Card */}
-                    {/* <div className=" my-3 md:my-2 w-full md:w-1/2 shadow-xl rounded-lg p-5 flex flex-col gap-3 ">
-                        <div className="flex flex-col items-center gap-1">
-                            <img
-                                className="w-20 lg:w-24 object-cover rounded-full"
-                                src="https://randomuser.me/api/portraits/men/47.jpg"
-                                alt=""
-                            />
-                            <h1 className="font-bold text-md md:text-lg tracking-widest  dark:text-white">
-                                Ramji Gupta
-                            </h1>
-                        </div>
-                        <div className="text-gray-600">
-                            <p className=" dark:text-white">
-                                3+ years of experience
-                            </p>
-                            <p>
-                                {" "}
-                                <span className="font-semibold">
-                                    Accountant
-                                </span>{" "}
-                                at Vishwajeet Banking Point
-                            </p>
-                        </div>
-                        <Link
-                            to="contact"
-                            spy={true}
-                            smooth={true}
-                            offset={-75}
-                            duration={500}
-                            className="text-indigo-600 font-semibold text-sm w-fit"
-                        >
-                            Know more
-                        </Link>
-                    </div> */}
-
-                    {/* Card */}
-                    {/* <div className=" my-3 md:my-2 w-full md:w-1/2 shadow-xl rounded-lg p-5 flex flex-col gap-3 ">
-                        <div className="flex flex-col items-center gap-1">
-                            <img
-                                className="w-20 lg:w-24 object-cover rounded-full"
-                                src="https://randomuser.me/api/portraits/men/47.jpg"
-                                alt=""
-                            />
-                            <h1 className="font-bold text-md md:text-lg tracking-widest  dark:text-white">
-                                Ritik Kumar Gupta
-                            </h1>
-                        </div>
-                        <div className="text-gray-600">
-                            <p className=" dark:text-white">
-                                3+ years of experience
-                            </p>
-                            <p>
-                                {" "}
-                                <span className="font-semibold">
-                                    Assistant Accountant
-                                </span>{" "}
-                                at Vishwajeet Banking Point
-                            </p>
-                        </div>
-                        <Link
-                            to="contact"
-                            spy={true}
-                            smooth={true}
-                            offset={-75}
-                            duration={500}
-                            className="text-indigo-600 font-semibold text-sm w-fit"
-                        >
-                            Know more
-                        </Link>
-                    </div> */}
+                    {teamData.map((data, index) => {
+                        return <Member key={index} data={data} />;
+                    })}
                 </div>
             </div>
             <div className=" w-full md:w-4/5 mx-auto bg-slate-500 h-[1px]"></div>
