@@ -6,9 +6,30 @@ import ritik from "../assets/ritik gupta jpg.jpg";
 import satyam from "../assets/satyam jpg.jpg";
 import rajat from "../assets/kundan.jpg";
 import rohit from "../assets/rohit.jpg";
+import shashi from "../assets/shashi.jpg";
+import vivek from "../assets/vivek.jpg";
+import rahul from "../assets/rahul.jpg";
 
 const Team = () => {
     const teamData = [
+        {
+            img: shashi,
+            name: "Shashi prakash singh",
+            about: "Team Leader",
+            experience: "5",
+        },
+        {
+            img: vivek,
+            name: "Vivekanand",
+            about: "Team Leader",
+            experience: "6",
+        },
+        {
+            img: rajat,
+            name: "Rajat Raj",
+            about: "Digital Marketing",
+            experience: "5",
+        },
         {
             img: ramu,
             name: "Ramu Verma",
@@ -33,18 +54,20 @@ const Team = () => {
             about: "Assistant Accountant at Vishwajeet Banking Point",
             experience: "4",
         },
-        {
-            img: rajat,
-            name: "Rajat Raj",
-            about: "Digital Marketing",
-            experience: "5",
-        },
+        
         {
             img: rohit,
             name: "Rohit Gupta",
             about: "Bussiness Development Executive at Vishwajeet Banking Point",
             experience: "2",
         },
+        
+        // {
+        //     img: rahul,
+        //     name: "Rahul Gupta",
+        //     about: "Chutiya",
+        //     experience: "-5",
+        // },
     ];
 
     return (
