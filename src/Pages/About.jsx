@@ -6,7 +6,7 @@ import vishwajeet from "../assets/vishwajeet (2).jpg";
 const About = () => {
     return (
         <div id="about" className=" dark:bg-slate-900">
-            <div className="px-5  md:mx-auto flex flex-col lg:flex-row items-center justify-center  py-40 gap-20 ">
+            <div className="px-5  md:mx-auto flex flex-col lg:flex-row items-center justify-center  py-20 gap-20 ">
                 {/* Left picture */}
                 <div className="relative flex items-center justify-center">
                     <img
