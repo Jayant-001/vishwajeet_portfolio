@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
     return (
-        <nav className=" bg-gray-500 dark:bg-slate-700 w-full">
+        <nav className=" bg-[#3c32a8] text-black dark:bg-slate-700 w-full">
             <div className="container px-2 mx-auto py-4 flex items-center justify-between">
                 {/* nav logo */}
                 <div className="flex items-center gap-2 cursor-pointer">
@@ -22,23 +22,26 @@ const Footer = () => {
                     </span>
                 </div>
 
-                {/* Nav components */}
-                <div className="hidden md:inline font-medium text-center text-slate-200">
-                <span className="">&#169;</span> 2023 Vishwajeet Banking Point Private Limited.
-                </div>
+                <div className="flex flex-col md:flex-row md:gap-3">
+                    {/* Nav components */}
+                    <div className="inline font-bold text-center text-white ">
+                        <span className="">&#169;</span> 2023 Vishwajeet Banking
+                        Point Private Limited.
+                    </div>
 
-                {/* menu */}
+                    {/* menu */}
 
-                <div className="font-medium text-center text-gray-200">
-                    Designed and Developed by{" "}
-                    <a
-                        rel="noreferrer"
-                        className="text-red-400 underline font-bold tracking-wider hover:text-red-300 active:text-red-500"
-                        href="https://jayant-gupta.vercel.app/"
-                        target="_blank"
-                    >
-                        Jayant
-                    </a>
+                    <div className="font-bold text-center text-white ">
+                        Designed and Developed by{" "}
+                        <a
+                            rel="noreferrer"
+                            className="text-red-400 underline font-bold tracking-wider hover:text-red-300 active:text-red-500"
+                            href="https://jayant-gupta.vercel.app/"
+                            target="_blank"
+                        >
+                            Jayant
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
