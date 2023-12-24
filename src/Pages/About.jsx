@@ -29,14 +29,20 @@ const About = () => {
                         </span>
                         <p className="text-xl font-medium dark:text-slate-300">
                             Contact:{" "}
-                            <span className="dark:text-white tracking-widest">
+                            <span className="dark:text-white tracking-wider font-bold">
                                 9506562637
                             </span>
                         </p>
                         <p className="text-xl font-medium dark:text-slate-300">
                             Email:{" "}
-                            <span className="dark:text-white text-lg sm:text-xl">
+                            <span className="dark:text-white text-lg sm:text-xl font-bold">
                                 vishwajeetbankingpoint@gmail.com
+                            </span>
+                        </p>
+                        <p className="text-xl font-medium dark:text-slate-300">
+                            GST Number:{" "}
+                            <span className="dark:text-white tracking-wider font-bold">
+                                09EMHPR1060Q1ZD
                             </span>
                         </p>
                     </div>

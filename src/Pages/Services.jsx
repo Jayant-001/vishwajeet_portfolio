@@ -6,6 +6,7 @@ import gpay from '../assets/gpay logo.jpg'
 import phonepe from "../assets/phonepe logo.jpg"
 import computer from "../assets/computer logo.png"
 import jio from "../assets/jio logo.jpg"
+import reliPay from "../assets/reliPay.png"
 
 const Services = () => {
     const serviceData = [
@@ -17,7 +18,7 @@ const Services = () => {
         {
             title: "RapiPay Fintech Pvt. Ltd",
             img: rapiPay,
-            desc: "AEPS (Aadhaar Enabled Payment System), Micro ATM Services, Insurance, Retailer ID,... etc",
+            desc: "AEPS (Aadhaar Enabled Payment System), Micro ATM Services, Insurance, Retailer ID,... etc.",
         },
         {
             title: "GooglePay Bussiness",
@@ -38,6 +39,11 @@ const Services = () => {
             title: "Jio Digital Life",
             img: jio,
             desc: "Retailer ID available, Jio SIM service available,... etc.",
+        },
+        {
+            title: "Reli Pay",
+            img: reliPay,
+            desc: "AEPS (Aadhaar Enabled Payment System), Micro ATM Services, Insurance, Retailer ID, PAN card services,... etc.",
         },
     ];
 

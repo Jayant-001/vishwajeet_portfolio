@@ -24,7 +24,7 @@ const Footer = () => {
 
                 {/* Nav components */}
                 <div className="hidden md:inline font-medium text-center text-slate-200">
-                    Vishwajeet Banking Point Private Limited.
+                <span className="">&#169;</span> 2023 Vishwajeet Banking Point Private Limited.
                 </div>
 
                 {/* menu */}
