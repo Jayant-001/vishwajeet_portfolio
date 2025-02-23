@@ -1,7 +1,7 @@
 import React from "react";
 import dots from "../assets/dots.png";
 import { Link } from "react-scroll";
-import vishwajeet from "../assets/vishwajeet (2).jpg";
+import vishwajeet from "../assets/Vishwajeet.jpg";
 
 const About = () => {
     return (
@@ -48,17 +48,15 @@ const About = () => {
                     </div>
 
                     {/* About Description */}
-                    <p className="text-gray-500 ">
-                        Block manager with experience in leveraging consultative
-                        selling strategies that build relationships across all
-                        target markets. <br /> Deep knowledge of marketing
-                        campaign development and implementation of training
-                        programs for new hires.
+                    <p className="text-gray-500 max-w-3xl">
+                        MANAGER at <b>Airtel Payments Bank</b> behalf of <b>RBI</b> with experience in leveraging consultative selling strategies that build relationships across all target markets. <br /> 
+                        Deep knowledge of marketing campaign development and implementation of training programs for new hires.
+
                     </p>
 
                     {/* About key points */}
                     <h2 className="text-gray-900 font-medium  dark:text-white">
-                        Block Manager @ Airtel Payment Bank
+                        Manager @ Airtel Payments Bank
                     </h2>
                     {/* <div className="w-full bg-gray-200 h-1.5 rounded-md">
                         <div className="w-full bg-indigo-600 h-1.5 rounded-md "></div>
@@ -71,6 +69,9 @@ const About = () => {
                     </div> */}
                     <h2 className="text-gray-900 font-medium  dark:text-white">
                         Distributer @ RapiPay Fintech Pvt. Ltd.
+                    </h2>
+                    <h2 className="text-gray-900 font-medium  dark:text-white">
+                        Distributor @ Relipay Fintech Pvt. Ltd.
                     </h2>
                     {/* <div className="w-full bg-gray-200 h-1.5 rounded-md">
                         <div className="w-[80%] bg-indigo-600 h-1.5 rounded-md "></div>

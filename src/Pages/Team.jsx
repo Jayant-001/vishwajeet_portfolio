@@ -9,12 +9,14 @@ import rohit from "../assets/rohit.jpg";
 import shashi from "../assets/shashi.jpg";
 import vivek from "../assets/vivek.jpg";
 import rahul from "../assets/rahul.jpg";
+import vinay from "../assets/vinay.jpg";
+import akash from "../assets/akash.jpg";
 
 const Team = () => {
     const teamData = [
         {
             img: shashi,
-            name: "Shashi prakash singh",
+            name: "Shashi Prakash Singh",
             about: "Team Leader",
             experience: "5",
         },
@@ -61,6 +63,19 @@ const Team = () => {
             about: "Bussiness Development Executive at Vishwajeet Banking Point",
             experience: "2",
         },
+        {
+            img: vinay,
+            name: "Vinay Kumar Singh",
+            about: "Area Sales Manager",
+            experience: "4",
+        },
+        {
+            img: akash,
+            name: "Akash Kasaudhan",
+            about: "Service BDE at Vishwajeet Banking Point",
+            experience: "2",
+        },
+
         
         // {
         //     img: rahul,
@@ -78,7 +93,7 @@ const Team = () => {
                     <h1 className="text-indigo-600 font-bold">Our Team</h1>
                     <h1 className="text-3xl  dark:text-white">
                         A family of{" "}
-                        <span className="text-bold text-red-500">8+</span>{" "}
+                        <span className="text-bold text-red-500">10+</span>{" "}
                         members
                     </h1>
                     {/* <p className="w-2/3 text-center text-gray-400">

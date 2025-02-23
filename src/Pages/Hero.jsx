@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
     const bios = [
-        "Block Manager of Airtel Payments Bank.",
+        "Manager at Airtel Payments Bank behalf of RBI.",
         "Operating Manager of Vishwajeet Banking Point.",
         "Provide all types banking services.",
     ];
